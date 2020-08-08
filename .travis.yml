@@ -13,6 +13,9 @@ matrix:
       dist: bionic
       arch: amd64
 script:
+  - echo "CPU Architecture is " $TRAVIS_CPU_ARCH
+  - echo "commit is " $TRAVIS_COMMIT
+  - df -h
   - make
 after_success:
   - ./a.out
