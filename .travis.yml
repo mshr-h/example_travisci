@@ -1,0 +1,6 @@
+language: c
+os: osx
+script:
+  - gcc main.c
+after_success:
+  - ./a.out
