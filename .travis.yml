@@ -8,6 +8,6 @@ arch:
   - ppc64le
   - amd64
 script:
-  - $(CC) main.c
+  - make
 after_success:
   - ./a.out
