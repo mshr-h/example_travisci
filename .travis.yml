@@ -9,7 +9,9 @@ arch:
   - s390x
   - ppc64le
   - amd64
-osx_image: xcode12
+osx_image:
+  - xcode12
+  - xcode11.6
 script:
   - echo "CPU Architecture is " $TRAVIS_CPU_ARCH
   - echo "commit is " $TRAVIS_COMMIT
